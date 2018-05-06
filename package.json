@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-preshape",
+  "version": "1.0.0",
+  "description": "A set of eslint rules for my projects.",
+  "main": "eslintrc.json",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HHogg/eslint-config-preshape"
+  },
+  "author": "Harry Hogg <harry@hogg.io>",
+  "peerDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}
