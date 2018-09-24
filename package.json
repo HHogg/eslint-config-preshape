@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-preshape",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A set of eslint rules for my projects.",
   "main": "eslintrc.json",
   "license": "MIT",
