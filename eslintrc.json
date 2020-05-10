@@ -1,19 +1,29 @@
 {
-  "parser": "babel-eslint",
-   "parserOptions": {
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
     "sourceType": "module"
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
   "env": {
     "browser": true,
     "jest": true,
     "node": true
   },
-  "plugins": ["react"],
   "globals": {
     "Promise": true
   },
   "rules": {
+    "@typescript-eslint/explicit-function-return-type": [0],
+    "@typescript-eslint/explicit-member-accessibility": [0],
+    "@typescript-eslint/indent": [0],
+    "@typescript-eslint/interface-name-prefix": [0],
+    "@typescript-eslint/no-empty-function": [0],
+    "@typescript-eslint/no-empty-interface": [0],
     "comma-dangle": [2, "always-multiline"],
     "comma-spacing": [2],
     "eol-last": [2],
@@ -33,6 +43,7 @@
     "object-shorthand": [2, "consistent-as-needed"],
     "prefer-const": [2],
     "quotes": [2, "single"],
+    "react/display-name": [0],
     "react/jsx-closing-bracket-location": [2, "after-props"],
     "react/jsx-curly-spacing": [2, { "children": true, "when": "always" }],
     "react/jsx-equals-spacing": [2, "never"],
@@ -48,7 +59,7 @@
     "react/no-find-dom-node": [0],
     "react/no-unescaped-entities": [0],
     "react/no-unused-prop-types": [2, {"skipShapeProps": true}],
-    "react/prop-types": [2],
+    "react/prop-types": [0],
     "react/sort-prop-types": [2],
     "semi": [2, "always"],
     "space-before-function-paren": [2, "never"],
