@@ -6,6 +6,9 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -27,6 +30,13 @@
     "comma-dangle": [2, "always-multiline"],
     "comma-spacing": [2],
     "eol-last": [2],
+    "import/order": [2, {
+      "newlines-between": "never",
+      "alphabetize": {
+        "caseInsensitive": true,
+        "order": "asc"
+      }
+    }],
     "indent-legacy": [2, 2, { "SwitchCase": 1 }],
     "jsx-quotes": [2, "prefer-double"],
     "keyword-spacing": [2],
